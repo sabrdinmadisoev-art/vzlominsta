@@ -6,8 +6,8 @@ import random
 import os
 
 # Токени бот ва ID админ аз environment variables
-BOT_TOKEN = 'BOT_TOKEN'
-ADMIN_ID = 'ADMIN_ID'
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
+ADMIN_ID_STR = os.environ.get('ADMIN_ID')
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
