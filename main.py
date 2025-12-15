@@ -686,11 +686,7 @@ def handle_all_messages(message):
 # Оғози бот
 if __name__ == '__main__':
     print("🤖 Бот оғоз ёфт...")
-    print(f"📅 Сана: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"🔑 Токен: {BOT_TOKEN[:20]}...")
-    print(f"👑 Админ ID: {ADMIN_ID}")
-    print("━━━━━━━━━━━━━━━━━━━━━━")
-    
+        
     while True:
         try:
             bot.infinity_polling(timeout=10, long_polling_timeout=5)
